@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Nightcode" default="default" basedir=".">
+  <taskdef name="bundleapp"
+           classname="com.oracle.appbundler.AppBundlerTask"
+           classpath="lib/appbundler-1.0.jar" />
+
+  <property environment="env" />
+
+  <target name="bundle-app">
+    <bundleapp outputdirectory="."
+               name="Nightcode"
+               displayname="Nightcode"
+               identifier="Nightcode"
+               mainclassname="nightcode/Main"
+               icon="nightcode.icns">
+      <runtime dir="${env.JAVA_HOME}" />
+      <classpath file="target/nightcode-0.2.4-standalone.jar" />
+    </bundleapp>
+  </target>
+</project>

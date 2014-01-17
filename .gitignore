@@ -4,6 +4,8 @@
 /checkouts
 pom.xml
 pom.xml.asc
+nightcode.exe
+Nightcode.app
 *.jar
 *.class
 .lein-deps-sum
